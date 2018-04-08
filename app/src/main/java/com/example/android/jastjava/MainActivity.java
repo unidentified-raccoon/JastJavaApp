@@ -57,16 +57,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
-        //        displayMessage(priceMessage);
     }
 
     /**
      * Calculates the price of the order.
      *
-     * @param quantity        is the number of cups.
      * @param addChocolate    is weather or not the user wants to add a chocolate topping
      * @param addWhippedCream is weather or not the user wants to add a whippedCream topping
-     * @param basePrice       is the price of coffee
      */
     private int calculatePrice(boolean addWhippedCream, boolean addChocolate) {
         int basePrice = 5;
@@ -136,21 +133,4 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
-
-    /**
-     * This method displays the given price on the screen.
-     */
-//    private void displayPrice(int number) {
-//        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-//        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
-//    }
-
-    /**
-     * This method displays the given text on the screen.
-     */
-//    private void displayMessage(String message) {
-//        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-//        orderSummaryTextView.setText(message);
-//    }
-
 }
